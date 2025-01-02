@@ -8,12 +8,18 @@ Career Page Navigation: Navigate to "Careers" and check visibility of sections l
 Job Search: Filter QA jobs by "Istanbul, Turkey" and "Quality Assurance" department. Verify job list and details.
 Job Details Validation: Ensure job positions, departments, and locations are correct.
 Role Redirection: Verify that clicking "View Role" redirects to the Lever application form.
-Tools: Selenium, Java, TestNG, Page Object Model (POM) design.
+Tools:
 
+Selenium
+Java
+TestNG
+Page Object Model (POM) design.
 Load Testing
 Scenario:
 Test: Simulate search behavior on N11 website.
-Tool: JMeter or Locust (1 user).
+Tool:
+JMeter
+Locust
 API Test Automation
 Scenario:
 Automate CRUD operations for the Petstore API:
@@ -22,8 +28,9 @@ Create Pet: Add a new pet.
 Read Pet: Fetch pet details.
 Update Pet: Modify pet information.
 Delete Pet: Test deletion with valid and invalid IDs.
-Tool: RestAssured (Java).
+Tool:
 
+RestAssured
 Technologies Used
 Selenium WebDriver: Web automation.
 JMeter/Locust: Load testing.
