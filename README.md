@@ -25,3 +25,6 @@ This project automates web and API testing for functionality, performance, and r
 - **Languages & Frameworks**: Python or Java with Selenium.
 - **Browser Support**: Tests run on Chrome and Firefox.
 - **Test Structure**: Follow Page Object Model (POM) and capture screenshots on failure. No BDD frameworks.
+
+[![Error Screenshot](https://github.com/Yhyyzci/Readme/blob/main/ErrorScreenshot.png)](https://github.com/Yhyyzci/Readme/blob/main/ErrorScreenshot.png)
+
