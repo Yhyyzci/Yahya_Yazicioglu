@@ -18,6 +18,8 @@ This project automates web and API testing for functionality, performance, and r
 - Simulate a search on the n11 website.
 - Validate the search module handles the load correctly.
 
+  [![Ekran Görüntüsü](https://github.com/Yhyyzci/Readme/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-12-31%20140713%20(1).gif)](https://github.com/Yhyyzci/Readme/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-12-31%20140713%20(1).gif)
+
 ### 5. API Testing - CRUD Operations
 - Perform CRUD operations on the Petstore API with both positive and negative scenarios.
 
