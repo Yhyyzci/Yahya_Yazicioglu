@@ -27,23 +27,30 @@ public class TC03_04 {
 
     @Test
     public void case3() throws InterruptedException {
-        // TC003; Go to https://useinsider.com/careers/quality-assurance/, click “See all QA jobs”, filter
+        // TC03_04; Go to https://useinsider.com/careers/quality-assurance/, click “See all QA jobs”, filter
         //jobs by Location: “Istanbul, Turkey”, and Department: “Quality Assurance”, check the
-        //presence of the job list
+        //presence of the job listCheck that all jobs’ Position contains “Quality Assurance”, Department contains
+        //“Quality Assurance”, and Location contains “Istanbul, Turkey”
 
         // Explicit wait oluşturuluyor
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
         // 1. "See all QA jobs" butonuna tıklama
         WebElement seeAllQaJobsButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-outline-secondary rounded text-medium mt-2 py-3 px-lg-5 w-100 w-md-50']")));
         seeAllQaJobsButton.click();
 
+        Thread.sleep(30000);
 
         // 2. Location filtresi: İstanbul, Türkiye'yi seçme
-       WebElement locationFilter = driver.findElement(By.xpath("(//span[@role='presentation'])[1]"));
+
+         // Lokasyon filtresine tıklama (beklemek için)
+        WebElement locationFilter = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[@role='presentation'])[1]")));
         locationFilter.click();
-        WebElement locationOption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[contains(text(),'İstanbul, Türkiye')]")));
+
+        // Lokasyon seçeneklerinin yüklenmesini bekleyin ve İstanbul, Türkiye'yi seçin
+        WebElement locationOption = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//li[@id='select2-filter-by-location-result-2qrv-Istanbul, Turkey'])[1]")));
         locationOption.click();
+
 
         // 3. Department filtresi: "Quality Assurance" seçme
         WebElement departmentFilter = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[@role='combobox'])[2]")));
